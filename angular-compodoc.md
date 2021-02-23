@@ -19,8 +19,6 @@ public isLoading = false;
 
 ## Compodoc
 
-# Compodoc
-
 **Compodoc** es una _herramienta de creación de documentación automática_ a traves de los comentarios que escribimos en el código para proyectos _Angular_, _Ionic_, _Nest_ o _Stencil_.
 
 ![compodoc logo](https://avatars3.githubusercontent.com/u/23202313)
