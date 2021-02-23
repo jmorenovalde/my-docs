@@ -25,7 +25,7 @@ La estructura está basada en la funcionalidad de los ficheros, de forma que sea
 
 En esta carpeta irán los distintos módulos de la aplicación. Las páginas que bien cargaremos mediante _Lazy Loading_ o bien en sí están metidos en un modulo para poder ser reutilizados en varias partes de la aplicación.
 
-Dentro podemos encontrar una estructura similar a la de [shared](###shared).
+Dentro podemos encontrar una estructura similar a la de [shared](#shared).
 
 ### core
 
