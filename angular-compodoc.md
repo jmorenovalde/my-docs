@@ -17,7 +17,7 @@ public isLoading = false;
 
 > Recomendación: Escribir los comentarios en Inglés, por si subes el código a un repositorio libre, que pueda llegar a más gente, y te vas acostumbrando a escribir en inglés.
 
-## Compodoc
+## Compodoc
 
 **Compodoc** es una _herramienta de creación de documentación automática_ a traves de los comentarios que escribimos en el código para proyectos _Angular_, _Ionic_, _Nest_ o _Stencil_.
 
