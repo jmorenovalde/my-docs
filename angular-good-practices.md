@@ -24,7 +24,7 @@ En este documento vamos a exponer una serie de pautas para la realización de un
   public itemsArray: number[] = [1, 2, 3, 4, 5, 6, 7];
   
   ngOnInit(): void {
-    //  Metemos un �tem cada segundo.
+    //  Metemos un ítem cada segundo.
     setInterval(
       () => itemsArray.push(itemsArray.length + 1),
       1000
