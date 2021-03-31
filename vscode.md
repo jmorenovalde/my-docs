@@ -29,8 +29,8 @@ Se recomienda instalar las siguientes extensiones:
   * [Prettier](#prettier): se explica [aquí](#prettier).
   * [Winter is Coming](https://marketplace.visualstudio.com/items?itemName=johnpapa.winteriscoming&wt.mc_id=angularessentials-github-jopapa): tema visual para VSCode.
 
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin): Esta extensión nos subraya de amarillo y marca el fichero con error cuando hay un error en el lint del fichero.
-![TSLint](https://github.com/Microsoft/vscode-typescript-tslint-plugin/raw/master/docs/config-error-problem.png)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Esta extensión nos subraya de amarillo y marca el fichero con error cuando hay un error en el lint del fichero.
+![ESLint](https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/2.1.19/1615820719164/Microsoft.VisualStudio.Services.Icons.Default)
 
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2): Esta extensión nos colorea de distinto color las llaves, paréntesis y corchetes para así saber si los estamos cerrando bien cuando los tenemos anidados.
 ![Bracket Pair Colorizer 2](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2/raw/master/images/example.png)
@@ -41,7 +41,7 @@ Se recomienda instalar las siguientes extensiones:
 * <a name="angularLanguageService"></a>[Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template): Esta extensión hace que se pueda acceder desde la vista a las propiedades, métodos y servicios públicos de la clase del Componente.
 ![Angular Language Service GIF](https://github.com/angular/vscode-ng-language-service/raw/master/demo.gif)
 
-* [i18n Ally](https://marketplace.visualstudio.com/items?itemName=antfu.i18n-ally): Esta extensión nos ayuda a la hora de realizar las traducciones del sito que estamos desarrollando, permitiendo buscar directamente la traducción en Goolge Translator.
+* [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally): Esta extensión nos ayuda a la hora de realizar las traducciones del sito que estamos desarrollando, permitiendo buscar directamente la traducción en Goolge Translator.
 ![i18n Ally](https://github.com/antfu/i18n-ally/blob/screenshots/review-editor.png?raw=true)
 
 * <a name="prettier"></a>[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Estandarización del código.
@@ -59,10 +59,12 @@ Se recomienda instalar las siguientes extensiones:
 * [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode): Con esta extensión podemos pasar las reglas del servidor de sonarqube sin necesidad de hacer un push del commit, además si configuramos las reglas, nos avisa dentro del código de issues que se van a generar en el sonarqube.
 ![SonarLint](https://github.com/SonarSource/sonarlint-vscode/raw/master/images/sonarlint-vscode.gif)
 
-  - [Configuración de SonarLint con sonarqube de indra](https://mind.indra.es/pages/viewpage.action?pageId=439431592)
-
 * [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio): Este plugin no es oficial, pero nos integra la aplicación [Draw.io](https://app.diagrams.net/) dentro de Visualstudio Code. Con esto tenemos que si abrimos un fichero _.drawio_ nos muestra el editor del Draw.io
 ![Draw.io](https://github.com/hediet/vscode-drawio/raw/master/docs/demo.gif)
+
+* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Esta extensión es muy recomendable para trabajar con Jest, nos marca los test que pasan o fallan, y marca el _expect_ que da el error.
+
+	![Jest](https://orta.gallerycdn.vsassets.io/extensions/orta/vscode-jest/3.2.0/1588254430761/Microsoft.VisualStudio.Services.Icons.Default)
 
 ## Shortkeys
 
@@ -75,3 +77,12 @@ Se recomienda instalar las siguientes extensiones:
 ## Cursos
 
 * [Visual Studio Code: Mejora tu velocidad para codificar](https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/).
+
+___
+Desarrollado por:
+
+Juan Antonio Moreno Valderrama.
+
+<a href="https://twitter.com/jmorenovade"><img src="https://img.shields.io/twitter/follow/jmorenovalde?label=Twitter&style=social" alt="Twitter"></a>
+<a href="https://www.linkedin.com/in/juan-antonio-moreno-valderrama/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/jmorenovalde"><img alt="GitHub followers" src="https://img.shields.io/github/followers/jmorenovalde?style=social"></a>

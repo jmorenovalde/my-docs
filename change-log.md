@@ -90,3 +90,12 @@ Cuando se genere la release, habrá que modificarlo para cambiar el `[Unreleased
 * [2] https://gist.githubusercontent.com/juampynr/4c18214a8eb554084e21d6e288a18a2c/raw/6d61b1ced1c66349cf9ef6ce5eb84546ebf6e79d/CHANGELOG.md
 
 * [3] https://standardjs.com/changelog.html
+
+___
+Desarrollado por:
+
+Juan Antonio Moreno Valderrama.
+
+<a href="https://twitter.com/jmorenovade"><img src="https://img.shields.io/twitter/follow/jmorenovalde?label=Twitter&style=social" alt="Twitter"></a>
+<a href="https://www.linkedin.com/in/juan-antonio-moreno-valderrama/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/jmorenovalde"><img alt="GitHub followers" src="https://img.shields.io/github/followers/jmorenovalde?style=social"></a>

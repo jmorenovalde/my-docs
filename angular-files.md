@@ -16,3 +16,12 @@ En los ficheros mock se guardan los datos para hacer los test, y si hiciera falt
 ## Rutas
 
 Para las rutas que iran en el lazy loading, crearemos un fichero que tendrá el sufijo `.routes`.
+
+___
+Desarrollado por:
+
+Juan Antonio Moreno Valderrama.
+
+<a href="https://twitter.com/jmorenovade"><img src="https://img.shields.io/twitter/follow/jmorenovalde?label=Twitter&style=social" alt="Twitter"></a>
+<a href="https://www.linkedin.com/in/juan-antonio-moreno-valderrama/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/jmorenovalde"><img alt="GitHub followers" src="https://img.shields.io/github/followers/jmorenovalde?style=social"></a>

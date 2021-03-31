@@ -103,3 +103,12 @@ En este documento vamos a exponer una serie de pautas para la realización de un
   **Referencias**:
   1. [Angular Performance: Optimize Template Expressions](https://blog.bitsrc.io/angular-performance-optimize-template-expressions-e30ac3f2ea7f).
   2. [10 Tricks to Optimize Your Angular App](https://blog.bitsrc.io/10-tricks-to-optimize-your-angular-app-44208f616bf0).
+
+___
+Desarrollado por:
+
+Juan Antonio Moreno Valderrama.
+
+<a href="https://twitter.com/jmorenovade"><img src="https://img.shields.io/twitter/follow/jmorenovalde?label=Twitter&style=social" alt="Twitter"></a>
+<a href="https://www.linkedin.com/in/juan-antonio-moreno-valderrama/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/jmorenovalde"><img alt="GitHub followers" src="https://img.shields.io/github/followers/jmorenovalde?style=social"></a>

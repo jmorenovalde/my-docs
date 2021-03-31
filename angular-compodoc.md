@@ -201,3 +201,12 @@ $ compodoc -d dist/my-library/doc
 
 * [Compodoc: Crea documentación en proyectos Angular/Ionic/TS](https://www.udemy.com/course/compodoc-crea-documentacion-en-angular-ionic/)
   Crear documentación de calidad y MUY fácil de mantener con Compodoc para proyectos de Angular 2+ / Ionic 2+ / Typescript. Curso gratuito en Udemy
+
+___
+Desarrollado por:
+
+Juan Antonio Moreno Valderrama.
+
+<a href="https://twitter.com/jmorenovade"><img src="https://img.shields.io/twitter/follow/jmorenovalde?label=Twitter&style=social" alt="Twitter"></a>
+<a href="https://www.linkedin.com/in/juan-antonio-moreno-valderrama/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/jmorenovalde"><img alt="GitHub followers" src="https://img.shields.io/github/followers/jmorenovalde?style=social"></a>
