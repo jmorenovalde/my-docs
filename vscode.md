@@ -62,9 +62,12 @@ Se recomienda instalar las siguientes extensiones:
 * [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio): Este plugin no es oficial, pero nos integra la aplicación [Draw.io](https://app.diagrams.net/) dentro de Visualstudio Code. Con esto tenemos que si abrimos un fichero _.drawio_ nos muestra el editor del Draw.io
 ![Draw.io](https://github.com/hediet/vscode-drawio/raw/master/docs/demo.gif)
 
+* [Terminal] (https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal): Esta extensión es muy sencilla, pone un icono para abrir o cerrar la terminal integrada de Visualstudio Code.
+   ![Terminal Extension](https://github.com/formulahendry/vscode-terminal/raw/master/images/toggle.png).
+
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Esta extensión es muy recomendable para trabajar con Jest, nos marca los test que pasan o fallan, y marca el _expect_ que da el error.
 
-	![Jest](https://orta.gallerycdn.vsassets.io/extensions/orta/vscode-jest/3.2.0/1588254430761/Microsoft.VisualStudio.Services.Icons.Default)
+  ![Jest](https://orta.gallerycdn.vsassets.io/extensions/orta/vscode-jest/3.2.0/1588254430761/Microsoft.VisualStudio.Services.Icons.Default)
 
 ## Shortkeys
 
