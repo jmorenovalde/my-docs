@@ -1,24 +1,56 @@
-# Ficheros en Angular
+# Files in Angular
 
-Todos los ficheros deben estar en [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
+All the files must be at [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) format.
+
+**Why we should use the kebab-case?** Because is the file format that choosed the _Angular Team_, and it's a _good practice_ respect this decision as a standard.
 
 
-En este documento se explican los archivos que no son los normales de Angular (_.component.*_, -.service.*_, _.module.ts_, ...).
+## Angular Files
 
-## Modelos
+These files are the normal Angular files:
 
-Para los modelos vamos a usar el sufijo `.model`.
 
-## Mock
+### Components:
 
-En los ficheros mock se guardan los datos para hacer los test, y si hiciera falta, mockear algun serivicio. Para este tipo de ficheros vamos a poner los sufijos `.mock.spec`. Le pongo el _.spec_, puesto que si pasas por las reglas de un _sonarqube_ nos dará un error si no viene con el _.spec_.
+In Angular a component should have 4 files (ts, html, css/scss and spec), all the files has the same structure, file-name.comonent.type.
 
-## Rutas
+```
+my-component.component.ts --> The logic of the component.
+my-component.component.html --> View of the compoent (should go inside *.ts).
+my-component.component.scss --> Styles of the component (should go inside *.ts or not exists if it is void).
+my-component.component.spec.ts --> Unit test file (it can´t exists if don't do unit test).
+```
 
-Para las rutas que iran en el lazy loading, crearemos un fichero que tendrá el sufijo `.routes`.
 
+### Models
+
+The models files are finished by `.model.ts`.
+
+
+### Services
+
+The service files are finished by `.service.ts`. It is posible to see an unit test file with the service file too (`.service.spec.ts`).
+
+
+## Non Anguar Regular files
+
+### Models
+
+The models files are finished by `.model.ts`. In this files we can store an _Interface_ or a _Class_ depence of the content of the model.
+
+
+### Routes
+
+The files of routes are very similar than Modules, but only with the routes variable to use in the module with the routes. This files are finished by `routes.ts`.
+
+### Mock
+
+This type of files are used to store data for the unit test. I use to finished this kind of files with `.mock.spec.ts` because _Sonarqube_ return an _error as repeat code_ is finished with `mock.ts`, because is a type of file that _Sonarqube_ not reconice.
+
+
+Back to [Readme](./README.md).
 ___
-Desarrollado por:
+Author:
 
 Juan Antonio Moreno Valderrama.
 

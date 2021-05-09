@@ -1,20 +1,34 @@
 # my-docs
 
-Este sitio es un recopilatorio de los documentos de desarrollo fruto de mi experiencia, y en el que en principio se van a basar mis proyectos.
+This document repository of development information based on my experience working with Angular.
+
+I use these recommendations in my own project and I try to teach when I can to my workmates.
+
 
 ## Angular
-* [Estructura de un proyecto Angular](./angular-structure.md): Estructura de carpetas de un proyecto en _Angular_.
-* [Ficheros en angular](angular-files.md): Extensión de la nomenclatura en _Angular_ de los ficheros.
-* [Nombre de objetos en proyectos Angular](./angular-names.md): Se describe cómo nombrar las variables, constantes, funciones, clases, ...
-* [Documentación del código](./angular-compodoc.md): Explicación de la documentación de un proyecto en _Angular_.
-* [Buenas Prácticas en Angular](./angular-good-practices.md): Documento de recopilación de buenas prácticas en el desarrollo con _Angular_.
-* [Visualstudio Code](./vscode.md): en este documento se pueden ver la recopilación de extensiones que uso para este editor de código.
-* [Angular y Jest](./angular-jest.md): en este documento vemos una breve explicación de por qué migrar a _Jest_ y la explicación de cómo configurar _Jest_ en el proyecto de _Angular_.
 
-Si crees que hay una forma mejor, te invito a que me lo digas en una issue o me hagas un fork y una Pull Request con tus cambios.
+* [Files in Angular](angular-files.md): This article introduced us to the different types of files in an _Angular_ project.
+* [The Angular Project Structure](./angular-structure.md): Article to explain the folder structure of an _Angular_ Project.
+* [Objects name in an Angular Project](./angular-names.md): This article describe how to name the different objects in angular using Clean Code (variables, methods, classes, models, interfaces, ...).
+* [Code documentation](./angular-compodoc.md): In this article explain how to make a code documentation of an _Angular_ Project and how to make a documentation page with _Compodoc_.
+* [Good practices on Angular](./angular-good-practices.md): A little compilation of good practices to develop in _Angular_.
+* [Angular and Jest](./angular-jest.md): This article based to see a little explain to why migrate to _Jest_ from _Jasmine_ in an _Angular_ Project. In addition, it gives us some tips to migrate from _Jasmine_ to _Jest_.
+
+
+## IDEs
+
+* [Visualstudio Code](./vscode.md): A compilation of the most useful extensions for this IDE in my opinion to an Angular developer.
+
+
+## Contribute
+
+If you think that there are a better way to do something, you should opened me an issue to discuss it or make a pull request to change it.
+
+## Traductions:
+* [Spanish](README.es.md).
 
 ___
-Desarrollado por:
+Author:
 
 Juan Antonio Moreno Valderrama.
 
