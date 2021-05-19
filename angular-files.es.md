@@ -10,7 +10,7 @@ Estos archivos son los ficeros de Angulares normales:
 
 ### Componentes
 
-En Angular, un componente pudría tener 4 archivos (ts, html, css / scss y spec), todos los archivos tienen la misma estructura, `file-name.comonent.type`.
+En Angular, un _Componente_ pudría tener 4 archivos (ts, html, css / scss y spec), todos los archivos tienen la misma estructura, `file-name.comonent.type`.
 ```
 my-component.component.ts -> La lógica del componente.
 my-component.component.html -> Vista del componente (debe ir dentro de * .ts).
@@ -21,12 +21,37 @@ my-component.component.spec.ts -> Archivo de prueba unitaria (no puede existir s
 
 ### Modelos
 
-Los archivos de modelos están terminados con `.model.ts`.
+Los archivos de _Modelos_ están terminados con `.model.ts`.
 
 
 ### Servicios
 
-Los archivos de servicio terminan con `.service.ts`. También es posible ver un archivo de prueba unitaria con el archivo de servicio (`.service.spec.ts`).
+Los archivos de _Servicio_ terminan con `.service.ts`. También es posible ver un archivo de prueba unitaria con el archivo de servicio (`.service.spec.ts`).
+
+
+### Rutas
+
+Los archivos de rutas son muy similares a los _Módulos_, pero solo con la variable de rutas para usar en el módulo con las rutas. Estos archivos están terminados por `route.ts`.
+
+
+### Gards
+
+En este tipo de ficheros se crean las _Gards_ que permiten acceder a una ruta. Estos ficheros están termiando en `gard.ts`.
+
+
+### Resolvers
+
+En este tipo de fichero se crean los _Resolvers_ que son usados en las rutas para cargar el detalle de un CRUD (por ejemplo). Estos ficheros están terminados en `resolve.ts`.
+
+
+### Pipes
+
+En este tipo de ficheros se crean las _Pipes Personalizadas_. Estos ficheros están terminados en `pipe.ts`.
+
+
+### Directivas
+
+En este tipo de ficheros se crean las _Directivas Personalizadas_. Estos ficheros están terminados en `directive.ts`.
 
 
 ## Archivos regulares no Anguar
@@ -34,17 +59,12 @@ Los archivos de servicio terminan con `.service.ts`. También es posible ver un 
 
 ### Modelos
 
-Los archivos de modelos están terminados con `.model.ts`. En estos archivos podemos almacenar una interfaz o una clase dependiendo del contenido del modelo.
-
-
-### Rutas
-
-Los archivos de rutas son muy similares a los Módulos, pero solo con la variable de rutas para usar en el módulo con las rutas. Estos archivos están terminados por `route.ts`.
+Los archivos de _Modelos_ están terminados con `.model.ts`. En estos archivos podemos almacenar una interfaz o una clase dependiendo del contenido del modelo.
 
 
 ### Mock de datos
 
-Este tipo de archivos se utilizan para almacenar datos para la prueba unitaria. Yo suelo terminar este tipo de archivos con `.mock.spec.ts` porque **Sonarqube** devuelve un _error de el código repetido_ si termina con `mock.ts`, porque es un tipo de archivo que **Sonarqube** no reconoce.
+Este tipo de archivos se utilizan para almacenar datos para las pruebas unitarias (_Datos de prueba_). Yo suelo terminar este tipo de archivos con `.mock.spec.ts` porque **Sonarqube** devuelve un _error de el código repetido_ si termina con `mock.ts`, porque es un tipo de archivo que **Sonarqube** no reconoce.
 
 Volver al [Readme](./README.es.md).
 ___
