@@ -27,8 +27,8 @@ In _CleanCode_ it is recommended to use the word `is` in front of what we want t
 
 ```typescript
 public isVisible: boolean;
-// isVisible = false => No es visible.
-// isVisible = true => Es visible.
+// isVisible = false => It is not visible.
+// isVisible = true => It is visible.
 ```
 
 If `is` does not fit, we will have to put another verb that implies a yes or no answer, for example, `can` (`canSave`).
