@@ -89,6 +89,7 @@ En esta carpeta, almacenamos los modelos de los modelos de entidad personalizado
   └── user.model.ts
 ```
 
+Volver al [Readme](./README.es.md).
 ___
 Desarrollado por:
 

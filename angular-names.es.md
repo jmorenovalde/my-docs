@@ -1,6 +1,11 @@
-# Convención de nombres
+# Nombre de objetos en proyectos Angular
 
-En este documento se quiere poner las bases a un estándar para la estandarización de los nombres de las [variables](#variables), [constantes](#constantes), [funciones](#funciones), [clases e interfaces](#clases-e-interfaces).
+En este documento, me gustaría poner las bases en un estándar para nombrar objetos:
+
+* [Variables](#variables).
+* [Constantes](#constantes).
+* [Funciones](#funciones).
+* [Clases e interfaces](#clases-e-interfaces).
 
 > _**IMPORTANTE:**_ Los nombres siempre en inglés, ya que suelen ser más fáciles y no usan caracteres no estándars como _ñ_ o _acentos_.
 
@@ -12,7 +17,7 @@ Los nombres de las variables han de ser autoexplicativas (_CleanCode_), y usarem
 let numberObjectsPerPage = 10;
 ```
 
-> **Nota:** antiguamente, a las variables privadas se les ponía un _ delante. Esta práctica ya está en desuso, y el linter lo marcará como error.
+> **Nota:** antiguamente, a las variables privadas se les ponía un `_` delante. Esta práctica ya está en desuso, y el _linter_ lo marcará como error.
 
 Dependiendo de la funcionalidad de la variable usaremos unos añadidos a las variables.
 
@@ -25,6 +30,8 @@ public isVisible: boolean;
 // isVisible = false => No es visible.
 // isVisible = true => Es visible.
 ```
+
+Si no nos encaja `is` deberemos poner otro verbo que implique una respuersta de sí o no, por ejemplo, `can` (`canSave`).
 
 ### Eventos
 
@@ -98,8 +105,10 @@ export interface MiInterfaz{};
 
 > Nota: Evitar el uso de `INombre` para denominar la interfaz _Nombre_.
 
+Volver al [Readme](./README.es.md).
+
 ___
-Desarrollado por:
+Autor:
 
 Juan Antonio Moreno Valderrama.
 

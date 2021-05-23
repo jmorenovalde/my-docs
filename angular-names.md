@@ -1,24 +1,29 @@
-# Convención de nombres
+# Objects name in an Angular Project
 
-En este documento se quiere poner las bases a un estándar para la estandarización de los nombres de las [variables](#variables), [constantes](#constantes), [funciones](#funciones), [clases e interfaces](#clases-e-interfaces).
+In this document, I would want to put the bases to a standard to name objects:
 
-> _**IMPORTANTE:**_ Los nombres siempre en inglés, ya que suelen ser más fáciles y no usan caracteres no estándars como _ñ_ o _acentos_.
+* [Variables](#variables).
+* [Constants](#constants).
+* [Functions](#functions).
+* [Classes and Interfaces](#classes-and-intefaces).
+
+> _**IMPORTANT:**_ All the names should be in English.
 
 ## Variables
 
-Los nombres de las variables han de ser autoexplicativas (_CleanCode_), y usaremos la notificación _lower camelCase_
+The names of the variables must be self-explanatory (_CleanCode_), and we will use the _lower camelCase_ notification.
 
 ```typescript
 let numberObjectsPerPage = 10;
 ```
 
-> **Nota:** antiguamente, a las variables privadas se les ponía un _ delante. Esta práctica ya está en desuso, y el linter lo marcará como error.
+> **Note:** In the past, private variables were put a `_` in front of them. This practice is now deprecated, and the _linter_ will mark it as an error.
 
-Dependiendo de la funcionalidad de la variable usaremos unos añadidos a las variables.
+Depending on the functionality of the variable we will use some additions to the variables.
 
 ### Boolean
 
-En _CleanCode_ se recomienda usar la palabar `is` delante de lo que queremos marcar como `boolean`. Además, se deja implicito que `true` es activo y `false` no activo.
+In _CleanCode_ it is recommended to use the word `is` in front of what we want to mark as` boolean`. Also, it is implied that `true` is active and` false` is not active.
 
 ```typescript
 public isVisible: boolean;
@@ -26,80 +31,84 @@ public isVisible: boolean;
 // isVisible = true => Es visible.
 ```
 
-### Eventos
+If `is` does not fit, we will have to put another verb that implies a yes or no answer, for example, `can` (`canSave`).
 
-Para indicar que el contenido de la variable es un elemento se sugiere poner el símbolo `$` al principio de la variable.
+### Events
+
+To indicate that the content of the variable is an element, it is suggested to put the symbol `$` at the beginning of the variable.
 
 ```typescript
 let $openWindow: Event;
 ```
 
-De esta forma nos ahorramos poner la variable como:
+In this way we save putting the variable as:
 
 ```typescript
 let openWindowEvent: Event;
 ```
 
-Otro ejemplo de uso:
+Another example of use:
 
 ```html
-<button (click)="method($mouseEvent)">Acction</button>
+<button (click) = "method($mouseEvent)"> Acction </button>
 ```
 
 ### Observables
 
-Para indicar que una variable es un Observable se sugiere poner el símbolo `$` al final de la variable.
+To indicate that a variable is an Observable, it is suggested to put the symbol `` $ '' at the end of the variable.
 
 ```typescript
 let openWindow$: Observable;
 ```
 
-De esta forma nos ahorramos poner la variable como:
+In this way we save putting the variable as:
 
 ```typescript
 let openWindowObservable: Observable;
 ```
 
-### Servicios
+### Services
 
-Para las variables que se crean en el `constructor` de la clase, se propone usar el nombre del servicio, en _lower camelCase_
-
-```typescript
-constructor (private userService: UserService) { }
-```
-
-## Constantes
-
-Para las constantes se sugiere usar la convención de nombre *SCREAMING_SNAKE_CASE*.
+For the variables that are created in the `constructor` of the class, it is proposed to use the name of the service, in _lower camelCase_
 
 ```typescript
-const CONSTANTE = 1;
-const NUEVA_CONSTANTE = 2;
+constructor (private userService: UserService) {}
 ```
 
-## Funciones
+## Constants
 
-Para las funciones vamos a usar la convención de nombre _lower camelCase_.
+For constants it is suggested to use the naming convention *SCREAMING_SNAKE_CASE*.
 
 ```typescript
-public getUsers(): void {}
-
-private updateUser(user: User): void {}
+CONSTANT const = 1;
+const NEW_CONSTANT = 2;
 ```
 
-## Clases e Interfaces
+## Functions
 
-Para las _clases_ e _interfaces_ vamos a usar la convención de nombre _Upper CamelCase_.
+For functions we are going to use the naming convention _lower camelCase_.
 
 ```typescript
-export class MiClae {};
-export interface MiInterfaz{};
+public getUsers (): void {}
+
+private updateUser (user: User): void {}
 ```
 
-> Nota: Evitar el uso de `INombre` para denominar la interfaz _Nombre_.
+## Classes and Interfaces
+
+For _classes_ and _interfaces_ we are going to use the _Upper CamelCase_ naming convention.
+
+```typescript
+export class MyClae {};
+export interface MyInterface {};
+```
+
+> Note: Avoid using `INname` to name the interface _Name_.
+
+Back to [Readme](./README.md).
 
 ___
-Desarrollado por:
+Author:
 
 Juan Antonio Moreno Valderrama.
 
