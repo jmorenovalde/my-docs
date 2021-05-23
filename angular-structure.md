@@ -1,12 +1,13 @@
-# Estructuras de directorios de un proyecto en Angular
+# The Angular Project Structure
 
-El objetivo de este artículo es hacer una estandarización de la estructura de las carpetas de un proyecto en Angular.
+The objective of this article is to standardize the structure of the folders of a project in Angular.
 
-Para ello vamos a tomar como base el artículo [How to define a highly scalable folder structure for your Angular project](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7).
+For that we take the article [How to define a highly scalable folder structure for your Angular project](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7) as a base.
 
-## Estructura del proyecto
 
-La estructura está basada en la funcionalidad de los ficheros, de forma que sea fácil por una persona ajena al proyecto encontrar un fichero.
+## Project structure
+
+The structure is based on the functionality of the files, with this way it is very easy that an outside-project person finds out a file in the project.
 
 ```
 └── src
@@ -19,55 +20,12 @@ La estructura está basada en la funcionalidad de los ficheros, de forma que sea
   └── environments
 ```
 
-`[+]` Con este símbolo se indica que puede haber subdirectorios dentro.
+> `[+]` This symbol should indicate that the folder could have subfolders inside.
 
-### modules
-
-En esta carpeta irán los distintos módulos de la aplicación. Las páginas que bien cargaremos mediante _Lazy Loading_ o bien en sí están metidos en un modulo para poder ser reutilizados en varias partes de la aplicación.
-
-Dentro podemos encontrar una estructura similar a la de [shared](#shared).
-
-### core
-
-En esta carpeta estarán elementos que se van a ser instanciados una única vez, como los servicios, guards, ...
-
-```
-└── core
-  ├── [+] guards
-  ├── [+] http
-  ├── [+] interceptors
-  ├── [+] mocks
-  ├── [+] services
-  └── core.module.ts
-```
-
-En el directorio `http` es donde irán los servicios que van a comunicarse con las API REST.
-
-En el directorio `mocks` se inserta el código necesario para trabajar sin servidor, mientras está en desarrollo alguna parte del backend. Le ponemos la extensión spec, puesto que si trabajamos con `sonarqube` nos va a marcar estos ficheros como duplicaciones de código, ya uqe en muchos casos tienen exportaciones de constantes `json`.
-
-```
-└── mocks
-  ├── language.mock.spec.ts
-  └── users.mock.spec.ts
-```
-
-En el directorio `services` se crearán los que no se conectan a una API REST, como por ejemplo un servicio que se encargue de leer y escribir en el _LocalStorage_ del navegador.
-
-### models
-
-En este directorio guardamos los modelos de los tipos personalizados que se van a utilizar en nuestra aplicación. A los modelos les ponemos el sufijo model, para indicar que son modelo. Además crearemos un fichero `model.ts` que hará de `barrel`.
-
-```
-└── models
-  ├── models.ts
-  ├── post.model.ts
-  ├── post-comment.model.ts
-  └── user.model.ts
-```
 
 ### shared
 
-En este directorio introduciremos los distintos elementos que sean comunes a la aplicación.
+In this folder, introduce the different elements that are common in the application.
 
 ```
 └── [+] shared
@@ -76,9 +34,9 @@ En este directorio introduciremos los distintos elementos que sean comunes a la 
   └── [+] pipes
 ```
 
-En el directorio `components` estarán los componentes que se van a reutilizar en varios módulos. Cada componente debe ir en su propia carpeta. Si hay varios, crear un fichero `index.ts` para que la importación sea más sencilla (`barrel`).
+In the `components` folder will stay the components that we will reuse in several _modules_. Each component will be in itself folder. If there will be some components, It is very recommended to create an `index.ts` to do easier the importation of the components (`barrel`).
 
-A continuación vemos un ejemplo de los componentes:
+Following, we see an example of the components:
 
 ```
 └── components
@@ -92,16 +50,45 @@ A continuación vemos un ejemplo de los componentes:
   └── index.ts
 ```
 
-En los directorios `directives` y `pipes` deben ir las directivas y pipes que se creen personalizadas para algún componente y que se usen en componentes del directorio `components`. Crear un directorio por cada elemento. Crear un fichero `index.ts` para que la importación sea más sencilla.
+In the folders `directives` and `pipes` should go the directives and pipes for the custom pipes or directives that use the components of the _component_ folder inside _shared_ folder. Create a folder for each element and an `index.ts` if exists more than one element to do more easier importation of the elements.
 
-### assets
 
-En este directorio se guardan los recursos que se van a utilizar en el desarrollo, estilos, javascript e imágenes, por ejemplo.
+### modules
+
+In this folder should be the modules of the application. The components that we want to load as _Lazy Loading_ or components wrap by a module could reuse in other parts of the application.
+
+Inside this folder, we should find out a similar structure of [sharded](#shared).
+
+
+### core
+
+In this folder, they will be the elements that will be instantiated only one time in all the application, as services, guards, ...
 
 ```
-└── assets
-  └── images
-    └── logo.png
+└── core
+  ├── [+] guards
+  ├── [+] http
+  ├── [+] interceptors
+  ├── [+] services
+  └── core.module.ts
+```
+
+The `http` folder is the folder to store the services that connect with the APIs.
+
+n the `services` folder, we should see the services that not connect to the APIs, for example, a service to store data in _LocalStorage_
+
+
+### models
+
+
+In this folder, we store the models of the custom entity models, that we could use in the application. If there are several files, I recommend creating a _barrel_ named `model.ts`.
+
+```
+└── models
+  ├── models.ts
+  ├── post.model.ts
+  ├── post-comment.model.ts
+  └── user.model.ts
 ```
 
 ___

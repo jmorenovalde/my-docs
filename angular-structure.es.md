@@ -19,51 +19,8 @@ La estructura está basada en la funcionalidad de los ficheros, de forma que sea
   └── environments
 ```
 
-`[+]` Con este símbolo se indica que puede haber subdirectorios dentro.
+> `[+]` Con este símbolo se indica que puede haber subdirectorios dentro.
 
-### modules
-
-En esta carpeta irán los distintos módulos de la aplicación. Las páginas que bien cargaremos mediante _Lazy Loading_ o bien en sí están metidos en un modulo para poder ser reutilizados en varias partes de la aplicación.
-
-Dentro podemos encontrar una estructura similar a la de [shared](#shared).
-
-### core
-
-En esta carpeta estarán elementos que se van a ser instanciados una única vez, como los servicios, guards, ...
-
-```
-└── core
-  ├── [+] guards
-  ├── [+] http
-  ├── [+] interceptors
-  ├── [+] mocks
-  ├── [+] services
-  └── core.module.ts
-```
-
-En el directorio `http` es donde irán los servicios que van a comunicarse con las API REST.
-
-En el directorio `mocks` se inserta el código necesario para trabajar sin servidor, mientras está en desarrollo alguna parte del backend. Le ponemos la extensión spec, puesto que si trabajamos con `sonarqube` nos va a marcar estos ficheros como duplicaciones de código, ya uqe en muchos casos tienen exportaciones de constantes `json`.
-
-```
-└── mocks
-  ├── language.mock.spec.ts
-  └── users.mock.spec.ts
-```
-
-En el directorio `services` se crearán los que no se conectan a una API REST, como por ejemplo un servicio que se encargue de leer y escribir en el _LocalStorage_ del navegador.
-
-### models
-
-En este directorio guardamos los modelos de los tipos personalizados que se van a utilizar en nuestra aplicación. A los modelos les ponemos el sufijo model, para indicar que son modelo. Además crearemos un fichero `model.ts` que hará de `barrel`.
-
-```
-└── models
-  ├── models.ts
-  ├── post.model.ts
-  ├── post-comment.model.ts
-  └── user.model.ts
-```
 
 ### shared
 
@@ -76,9 +33,9 @@ En este directorio introduciremos los distintos elementos que sean comunes a la 
   └── [+] pipes
 ```
 
-En el directorio `components` estarán los componentes que se van a reutilizar en varios módulos. Cada componente debe ir en su propia carpeta. Si hay varios, crear un fichero `index.ts` para que la importación sea más sencilla (`barrel`).
+In the `components` folder will stay the components that we will reuse in several _modules_. Each component will be in itself folder. If there will be some components, It is very recommended to create an `index.ts` to do easier the importation of the components (`barrel`).
 
-A continuación vemos un ejemplo de los componentes:
+Following, we see an example of the components:
 
 ```
 └── components
@@ -92,16 +49,44 @@ A continuación vemos un ejemplo de los componentes:
   └── index.ts
 ```
 
-En los directorios `directives` y `pipes` deben ir las directivas y pipes que se creen personalizadas para algún componente y que se usen en componentes del directorio `components`. Crear un directorio por cada elemento. Crear un fichero `index.ts` para que la importación sea más sencilla.
+En las carpetas `directives` y` pipe` deben ir las directivas y las tuberías para las tuberías personalizadas o directivas que usan los componentes de la carpeta _component_ dentro de la carpeta _shared_. Cree una carpeta para cada elemento y un `index.ts` si existe más de un elemento para facilitar la importación de los elementos.
 
-### assets
 
-En este directorio se guardan los recursos que se van a utilizar en el desarrollo, estilos, javascript e imágenes, por ejemplo.
+### modules
+
+En esta carpeta irán los distintos módulos de la aplicación. Las páginas que bien cargaremos mediante _Lazy Loading_ o bien en sí están metidos en un modulo para poder ser reutilizados en varias partes de la aplicación.
+
+Dentro podemos encontrar una estructura similar a la de [shared](#shared).
+
+
+### core
+
+En esta carpeta estarán los elementos que se instanciarán una sola vez en toda la aplicación, como servicios, guardias, ...
 
 ```
-└── assets
-  └── images
-    └── logo.png
+└── core
+  ├── [+] guards
+  ├── [+] http
+  ├── [+] interceptors
+  ├── [+] services
+  └── core.module.ts
+```
+
+En el directorio `http` es donde irán los servicios que van a comunicarse con las API REST.
+
+En la carpeta `services` deberíamos ver los servicios que no se conectan a las API, por ejemplo un servicio para almacenar datos en _LocalStorage_
+
+
+### models
+
+En esta carpeta, almacenamos los modelos de los modelos de entidad personalizados, que podríamos usar en la aplicación. Si hay varios archivos, recomiendo crear un _barrel_ llamado `model.ts`.
+
+```
+└── models
+  ├── models.ts
+  ├── post.model.ts
+  ├── post-comment.model.ts
+  └── user.model.ts
 ```
 
 ___
