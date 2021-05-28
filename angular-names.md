@@ -80,7 +80,7 @@ constructor (private userService: UserService) {}
 For constants it is suggested to use the naming convention *SCREAMING_SNAKE_CASE*.
 
 ```typescript
-CONSTANT const = 1;
+const CONSTANT = 1;
 const NEW_CONSTANT = 2;
 ```
 

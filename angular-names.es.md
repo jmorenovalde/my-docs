@@ -80,8 +80,8 @@ constructor (private userService: UserService) { }
 Para las constantes se sugiere usar la convención de nombre *SCREAMING_SNAKE_CASE*.
 
 ```typescript
-const CONSTANTE = 1;
-const NUEVA_CONSTANTE = 2;
+const CONSTANT = 1;
+const NEW_CONSTANT = 2;
 ```
 
 ## Funciones
